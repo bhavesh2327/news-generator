@@ -1,0 +1,75 @@
+/* style.css - Configurable Dark Theme */
+
+:root {
+  --background-color: #1b1b1b;
+  --card-background: #2a2a2a;
+  --text-color: #e0e0e0;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --footer-text-color: #00aaff;
+  --font-size: 16px;
+  --card-border-color: #444;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--font-size);
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--card-border-color);
+}
+
+.news-container {
+  margin-top: 20px;
+}
+
+.news-card {
+  background-color: var(--card-background);
+  color: var(--text-color);
+  border: 1px solid var(--card-border-color);
+  transition: transform 0.2s;
+}
+
+.news-card:hover {
+  transform: scale(1.02);
+}
+
+.card-title, .card-text, .card-small {
+  color: var(--text-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  display: none; /* Hidden by default */
+}
+
+.message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+/* Footer Styling */
+.footer {
+  background-color: var(--background-color);
+  color: var(--footer-text-color);
+  padding: 1rem 0;
+  border-top: 1px solid var(--card-border-color);
+}
+
+.footer-text {
+  color: var(--footer-text-color);
+  font-size: 1rem;
+}
